@@ -1,0 +1,21 @@
+,id_dite,jmeno,pohlavi,datum_narozeni,vek,vek_dny_srpen31,body_za_vek_roky,body_za_vek_dny,spadova_skolka,skolka_sourozence,bydliste_brno,prioritni_vek,prodlouzena_dochazka
+0,0,Jan Novák,M,2016-10-22,6,-53,2120,0.0,3,,True,True,False
+1,1,Jan Svoboda,M,2019-02-17,4,194,2040,3.88,1,,True,True,False
+2,2,Jan Novotný,M,2020-08-17,3,13,2000,0.26,3,,True,True,False
+3,3,Jan Dvořák,M,2018-02-18,5,193,2080,3.86,1,,True,True,False
+4,4,Jan Černý,M,2021-02-19,2,192,0,3.84,3,,True,False,False
+5,5,Jan Procházka,M,2019-12-18,3,-110,2000,0.0,1,,True,True,False
+6,6,Jan Kovařík,M,2021-02-26,2,185,0,3.7,0,,True,False,False
+7,7,Jan Veselý,M,2018-04-29,5,123,2080,2.46,3,,True,True,False
+8,8,Jan Horák,M,2019-02-15,4,196,2040,3.92,1,,True,True,False
+9,9,Jan Němec,M,2018-03-03,5,180,2080,3.6,0,3.0,True,True,False
+10,10,Jan Pospíšil,M,2021-04-23,2,129,0,2.58,0,,True,False,False
+11,11,Jan Marek,M,2021-06-18,2,73,0,1.46,1,,True,False,False
+12,12,Jan Urban,M,2016-09-24,6,-25,2120,0.0,1,,True,True,False
+13,13,Jan Soukup,M,2018-04-20,5,132,2080,2.64,0,,True,True,True
+14,14,Jan Hájek,M,2017-04-20,6,132,2120,2.64,3,,True,True,True
+15,15,Jan Fiala,M,2019-11-01,3,-63,2000,0.0,3,,False,True,False
+16,16,Jan Král,M,2018-05-08,5,114,2080,2.2800000000000002,1,,True,True,False
+17,17,Jan Růžička,M,2018-10-02,4,-33,2040,0.0,1,,True,True,True
+18,18,Jan Beneš,M,2018-01-27,5,215,2080,4.3,2,,True,True,False
+19,19,Jan Bílý,M,2018-11-11,4,-73,2040,0.0,0,,True,True,False

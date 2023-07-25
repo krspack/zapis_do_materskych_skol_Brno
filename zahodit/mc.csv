@@ -1,0 +1,66 @@
+mc,nazev_skoly
+Brno,['MŠ Štolcova 51' 'MŠ Veslařská 256']
+bohunice,"['MŠ Amerlingova 4' 'MŠ Švermova 11' 'MŠ Uzbecká 30'
+ 'MŠ Pohádka Běloruská 4' 'Základní škola a mateřská škola Vedlejší 10']"
+bosonohy,['Základní škola a MŠ Bosonožské nám 44']
+bystrc,"['MŠ DUHA Kachlíkova 21' 'MŠ KAMECHY Kavčí 3'
+ 'MŠ Laštůvkova 57/59 Brno-Bystrc' 'MŠ Skřivánek Kachlíkova 19'
+ 'MŠ SLUNÍČKO Štouračova 23' 'MŠ ZVÍDÁLEK Kachlíkova 17']"
+cernovice,['MŠ Elišky Krásnohorské 15' 'MŠ Kneslova 7' 'MŠ Štolcova 21']
+chrlice,['MŠ Šromova 55' 'Základní škola a MŠ Jana Broskvy 3']
+ivanovice,['MŠ Hatě 19']
+jehnice,['Základní škola a mateřská škola Blanenská 1']
+jih,"['MŠ Hněvkovského 62' 'MŠ Klášterského 14' 'MŠ Kšírova 3' 'MŠ Slunná 25'
+ 'MŠ Záhumenice 1' 'MŠ Zelná 70']"
+jundrov,['MŠ Dubová 2']
+kninicky,['MŠ Studánka Ondrova 25']
+kohoutovice,"['MŠ Adélka U Velké ceny 8' 'MŠ Bellova 2' 'MŠ Libušina třída 29'
+ 'Základní škola a MŠ Chalabalova 2']"
+komin,['MŠ Absolonova 20a' 'MŠ Řezáčova 3' 'Základní škola a MŠ Pastviny 70']
+kralovo_pole,"['MŠ Rozárka Herčíkova 12' 'MŠ Božetěchova 65' 'MŠ Bulharská 62'
+ 'MŠ Dobrovského 66' 'MŠ Herčíkova 21' 'MŠ Chodská 15' 'MŠ Chodská 5'
+ 'MŠ Purkyňova 21' 'MŠ Vackova 70' 'Základní škola a MŠ Staňkova 14']"
+lisen,"['MŠ POHÁDKA Bratří Pelíšků 7' 'MŠ RADOST Brno' 'MŠ SLUNÍČKO Strnadova 13'
+ 'MŠ Hochmanova 25' 'MŠ Neklež 1a' 'MŠ Synkova 24' 'MŠ Trnkova 81'
+ 'Základní škola a mateřská škola Horníkova 1']"
+malomerice,['MŠ Cihelní 1a' 'MŠ Proškovo nám. 6/150']
+medlanky,['MŠ Hudcova 435/47']
+novy_liskovec,['MŠ Kamarád Čtvrtě 3' 'MŠ Pomněnky Oblá 51' 'MŠ Vážka Rybnická 45']
+oresin,['MŠ Oříšek Drozdí 210/2c']
+reckovice,"['MŠ Kárníkova 4' 'MŠ Měřičkova 46' 'MŠ Novoměstská 1' 'MŠ Škrétova 2'
+ 'MŠ Paraplíčko Tumaňanova 59' 'MŠ Puchýřova 13a']"
+sever,"['Masarykova základní škola a MŠ Zemědělská 29' 'MŠ Bieblova 16'
+ 'MŠ Brechtova 6' 'MŠ Jugoslávská 70' 'MŠ Kohoutova 6'
+ 'MŠ Marie Majerové 14' 'MŠ nám.SNP 25a' 'MŠ Síčka 1a' 'MŠ Slavíčkova 1'
+ 'MŠ Šrámkova 14' 'MŠ Tišnovská 169' 'MŠ Černopolní 3a'
+ 'Základní škola a MŠ Blažkova 9' 'Základní škola a MŠ Merhautova 37'
+ 'Základní škola a MŠ Milénova 14'
+ 'Základní škola J.A.Komenského a MŠ nám. Republiky 10']"
+slatina,"['MŠ Jihomoravské nám. 5'
+ 'Základní škola a mateřská škola Jihomoravské nám. 2'
+ 'Základní škola a mateřská škola Přemyslovo nám.1']"
+stary_liskovec,"['MŠ ulice Kosmonautů 2' 'MŠ Labská 7' 'MŠ Oderská 2' 'MŠ Bosonožská 4'
+ 'Základní škola a MŠ Elišky Přemyslovny 10']"
+stred,"['MŠ Na kopečku u zvonečku Horní 17' 'MŠ Bílého 24' 'MŠ Francouzská 50'
+ 'MŠ Kamenná 21' 'MŠ Křenová 76a' 'MŠ Nádvorní 3' 'MŠ Pšeník 18'
+ 'MŠ Soukenická 8' 'MŠ Tučkova 36' 'MŠ Údolní 68' 'MŠ Úvoz 57'
+ 'MŠ Vídeňská 39a' 'MŠ Vinařská 4' 'MŠ Všetičkova 19'
+ 'MŠ POD ŠPILBERKEM Údolní 9a' 'MŠ Zdislava Pellicova 4'
+ 'Základní škola a mateřská škola Antonínská 3'
+ 'Základní škola a mateřská škola Horní 16'
+ 'Základní škola a mateřská škola Husova 17'
+ 'Základní škola a mateřská škola Křenová 21'
+ 'Základní škola a mateřská škola Křídlovická 30b'
+ 'Základní škola a mateřská škola nám 28. října 22 (pracoviště Stará 13/15)'
+ 'Základní škola a mateřská škola nám 28. října 22'
+ 'Základní škola a mateřská škola Kotlářská 4']"
+střed,['MŠ Skořepka 5']
+turany,['MŠ Holásecká 11' 'MŠ U Lípy Svobody 3' 'MŠ V Aleji 2']
+vinohrady,"['MŠ Bořetická 7 Brno' 'MŠ Prušánecká 8 příspěvková organizace'
+ 'MŠ Sněhurka Brno' 'MŠ Velkopavlovická 15 příspěvková organizace']"
+zabovresky,"['MŠ Beruška Plovdivská 6' 'MŠ Fanderlíkova 9a' 'MŠ Gabriely Preissové 8'
+ 'MŠ Žižkova 57' 'Základní škola a MŠ nám. Svornosti 7']"
+zebetin,['MŠ Žabka příspěvková organizace']
+zidenice,"['MŠ NA OSADĚ Koperníkova 6' 'MŠ FAMILY Mazourova 2'
+ 'MŠ Pastelky Jamborova 11' 'MŠ Sedmikráska Zengrova 3' 'MŠ Kamenáčky 28'
+ 'MŠ Letní 3' 'MŠ Nopova 15' 'MŠ Šaumannova 20']"

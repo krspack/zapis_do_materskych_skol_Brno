@@ -1,0 +1,138 @@
+,id_skolka,nazev_skoly,mc_skolka,id_dite,jmeno,pohlavi,datum_narozeni,vek,vek_dny_srpen31,body_za_vek,spadova_skolka,skolka_sourozence,bydliste_brno,prioritni_vek,mc_dite
+0,0,Masarykova základní škola a MŠ Zemědělská 29,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+1,1,MŠ NA OSADĚ Koperníkova 6,zidenice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+2,2,MŠ Na kopečku u zvonečku Horní 17,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+3,3,MŠ Adélka U Velké ceny 8,kohoutovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+4,4,MŠ Beruška Plovdivská 6,zabovresky,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+5,5,MŠ Bořetická 7 Brno,vinohrady,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+6,6,MŠ Absolonova 20a,komin,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+7,7,MŠ Amerlingova 4,bohunice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+8,8,MŠ Bellova 2,kohoutovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+9,9,MŠ Bieblova 16,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+10,10,MŠ Bílého 24,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+11,11,MŠ Brechtova 6,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+12,12,MŠ Cihelní 1a,malomerice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+13,13,MŠ Dubová 2,jundrov,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+14,14,MŠ Francouzská 50,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+15,15,MŠ Hatě 19,ivanovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+16,16,MŠ Hněvkovského 62,jih,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+17,17,MŠ Holásecká 11,turany,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+18,18,MŠ Hudcova 435/47,medlanky,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+19,19,MŠ Jihomoravské nám. 5,slatina,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+20,20,MŠ Jugoslávská 70,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+21,21,MŠ Kamenná 21,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+22,22,MŠ Kárníkova 4,reckovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+23,23,MŠ Klášterského 14,jih,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+24,24,MŠ Kohoutova 6,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+25,25,MŠ Křenová 76a,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+26,26,MŠ Kšírova 3,jih,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+27,27,MŠ Libušina třída 29,kohoutovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+28,28,MŠ Marie Majerové 14,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+29,29,MŠ Měřičkova 46,reckovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+30,30,MŠ Nádvorní 3,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+31,31,MŠ nám.SNP 25a,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+32,32,MŠ Novoměstská 1,reckovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+33,33,MŠ Proškovo nám. 6/150,malomerice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+34,34,MŠ Pšeník 18,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+35,35,MŠ Řezáčova 3,komin,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+36,36,MŠ Síčka 1a,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+37,37,MŠ Skořepka 5,střed,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+38,38,MŠ Slavíčkova 1,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+39,39,MŠ Slunná 25,jih,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+40,40,MŠ Soukenická 8,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+41,41,MŠ Škrétova 2,reckovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+42,42,MŠ Šrámkova 14,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+43,43,MŠ Šromova 55,chrlice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+44,44,MŠ Švermova 11,bohunice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+45,45,MŠ Tišnovská 169,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+46,46,MŠ Tučkova 36,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+47,47,MŠ U Lípy Svobody 3,turany,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+48,48,MŠ Údolní 68,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+49,49,MŠ ulice Kosmonautů 2,stary_liskovec,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+50,50,MŠ Úvoz 57,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+51,51,MŠ Uzbecká 30,bohunice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+52,52,MŠ V Aleji 2,turany,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+53,53,MŠ Vídeňská 39a,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+54,54,MŠ Vinařská 4,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+55,55,MŠ Všetičkova 19,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+56,56,MŠ Záhumenice 1,jih,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+57,57,MŠ Zelná 70,jih,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+58,58,MŠ Černopolní 3a,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+59,59,MŠ DUHA Kachlíkova 21,bystrc,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+60,60,MŠ FAMILY Mazourova 2,zidenice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+61,61,MŠ Kamarád Čtvrtě 3,novy_liskovec,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+62,62,MŠ KAMECHY Kavčí 3,bystrc,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+63,63,MŠ Laštůvkova 57/59 Brno-Bystrc,bystrc,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+64,64,MŠ Oříšek Drozdí 210/2c,oresin,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+65,65,MŠ Paraplíčko Tumaňanova 59,reckovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+66,66,MŠ Pastelky Jamborova 11,zidenice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+67,67,MŠ POD ŠPILBERKEM Údolní 9a,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+68,68,MŠ Pohádka Běloruská 4,bohunice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+69,69,MŠ POHÁDKA Bratří Pelíšků 7,lisen,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+70,70,MŠ Pomněnky Oblá 51,novy_liskovec,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+71,71,MŠ Prušánecká 8 příspěvková organizace,vinohrady,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+72,72,MŠ RADOST Brno,lisen,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+73,73,MŠ Rozárka Herčíkova 12,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+74,74,MŠ Sedmikráska Zengrova 3,zidenice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+75,75,MŠ Skřivánek Kachlíkova 19,bystrc,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+76,76,MŠ SLUNÍČKO Strnadova 13,lisen,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+77,77,MŠ SLUNÍČKO Štouračova 23,bystrc,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+78,78,MŠ Sněhurka Brno,vinohrady,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+79,79,MŠ Studánka Ondrova 25,kninicky,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+80,80,MŠ Vážka Rybnická 45,novy_liskovec,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+81,81,MŠ Velkopavlovická 15 příspěvková organizace,vinohrady,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+82,82,MŠ Zdislava Pellicova 4,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+83,83,MŠ ZVÍDÁLEK Kachlíkova 17,bystrc,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+84,84,MŠ Žabka příspěvková organizace,zebetin,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+85,85,MŠ Božetěchova 65,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+86,86,MŠ Bulharská 62,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+87,87,MŠ Dobrovského 66,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+88,88,MŠ Elišky Krásnohorské 15,cernovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+89,89,MŠ Fanderlíkova 9a,zabovresky,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+90,90,MŠ Gabriely Preissové 8,zabovresky,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+91,91,MŠ Herčíkova 21,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+92,92,MŠ Hochmanova 25,lisen,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+93,93,MŠ Chodská 15,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+94,94,MŠ Chodská 5,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+95,95,MŠ Kamenáčky 28,zidenice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+96,96,MŠ Kneslova 7,cernovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+97,97,MŠ Labská 7,stary_liskovec,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+98,98,MŠ Letní 3,zidenice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+99,99,MŠ Neklež 1a,lisen,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+100,100,MŠ Nopova 15,zidenice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+101,101,MŠ Oderská 2,stary_liskovec,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+102,102,MŠ Puchýřova 13a,reckovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+103,103,MŠ Purkyňova 21,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+104,104,MŠ Synkova 24,lisen,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+105,105,MŠ Šaumannova 20,zidenice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+106,106,MŠ Štolcova 21,cernovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+107,107,MŠ Trnkova 81,lisen,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+108,108,MŠ Vackova 70,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+109,109,MŠ Žižkova 57,zabovresky,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+110,110,MŠ Bosonožská 4,stary_liskovec,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+111,111,Základní škola a mateřská škola Antonínská 3,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+112,112,Základní škola a mateřská škola Blanenská 1,jehnice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+113,113,Základní škola a MŠ Blažkova 9,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+114,114,Základní škola a MŠ Bosonožské nám 44,bosonohy,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+115,115,Základní škola a mateřská škola Horní 16,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+116,116,Základní škola a mateřská škola Husova 17,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+117,117,Základní škola a MŠ Chalabalova 2,kohoutovice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+118,118,Základní škola a mateřská škola Jihomoravské nám. 2,slatina,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+119,119,Základní škola a mateřská škola Křenová 21,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+120,120,Základní škola a mateřská škola Křídlovická 30b,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+121,121,Základní škola a MŠ Merhautova 37,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+122,122,Základní škola a MŠ Milénova 14,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+123,123,Základní škola a mateřská škola nám 28. října 22 (pracoviště Stará 13/15),stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+124,124,Základní škola a mateřská škola nám 28. října 22,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+125,125,Základní škola a MŠ nám. Svornosti 7,zabovresky,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+126,126,Základní škola a MŠ Pastviny 70,komin,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+127,127,Základní škola a mateřská škola Přemyslovo nám.1,slatina,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+128,128,Základní škola a mateřská škola Vedlejší 10,bohunice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+129,129,Základní škola a MŠ Elišky Přemyslovny 10,stary_liskovec,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+130,130,Základní škola a mateřská škola Horníkova 1,lisen,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+131,131,Základní škola a MŠ Jana Broskvy 3,chrlice,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+132,132,Základní škola a mateřská škola Kotlářská 4,stred,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+133,133,Základní škola a MŠ Staňkova 14,kralovo_pole,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+134,134,Základní škola J.A.Komenského a MŠ nám. Republiky 10,sever,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+135,135,MŠ Štolcova 51,Brno,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
+136,136,MŠ Veslařská 256,Brno,0,Jan Novák,M,2018-05-15,5,107,2082.14,67,,True,True,stred
