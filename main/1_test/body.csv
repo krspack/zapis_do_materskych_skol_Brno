@@ -1,0 +1,11 @@
+,Unnamed: 0,dite_id,jmeno,pohlavi,datum_narozeni,spadova_skolka,skolka_sourozence,bydliste_brno,prodlouzena_dochazka,mc,109,44,61,94
+0,4248,4248,Dominika Test Mrázková,F,2020-12-04,61,-1,True,False,stred,2250.0,2250.0,3000.0,2500.0
+0,3963,3963,Zuzana Test Marešová,F,2020-08-21,61,-1,True,False,stred,2290.18,2290.18,3040.0,2540.18
+0,2233,2233,Miloslav Test Polák,M,2019-03-22,61,-1,True,False,stred,2333.22,2333.22,3080.0,2583.22
+0,2357,2357,Josef Test Veselý,M,2019-01-01,61,-1,True,False,stred,2334.82,2334.82,3080.0,2584.82
+0,3831,3831,Tereza Test Benešová,F,2017-11-03,61,44,True,False,stred,2370.0,2380.0,3120.0,2620.0
+0,3636,3636,Petra Test Havlíčková,F,2019-11-13,44,-1,False,False,chrlice,2040.0,3040.0,2040.0,2040.0
+0,857,857,Josef Test Veselý,M,2021-04-20,44,-1,True,False,chrlice,2252.64,3000.0,2252.64,2252.64
+0,4963,4963,Štěpánka Test Marešová,F,2017-11-19,44,-1,True,False,chrlice,2370.0,3120.0,2370.0,2370.0
+0,4855,4855,Marie Test Procházková,F,2018-11-06,109,-1,True,False,sever,3080.0,2330.0,2330.0,2330.0
+0,3521,3521,Patricia Test Urbanová,F,2019-10-21,94,-1,True,False,stred,2290.0,2290.0,2540.0,3040.0
