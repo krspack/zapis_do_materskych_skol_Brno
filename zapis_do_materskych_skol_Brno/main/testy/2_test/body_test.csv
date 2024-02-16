@@ -1,0 +1,11 @@
+,Unnamed: 0,dite_id,jmeno,pohlavi,datum_narozeni,spadova_skolka,skolka_sourozence,bydliste_brno,prodlouzena_dochazka,mc,11,71,88
+0,1571,1571,Juraj Test Navrátil,M,2018-04-28,71,71,True,False,sever,2372.48,3130.0,2372.48
+0,829,829,Josef Test Soukup,M,2017-08-08,71,-1,True,False,sever,2410.44,2910.0,2410.44
+0,3503,3503,Simona Test Weissová,F,2019-01-30,71,-1,True,False,sever,2334.24,3080.0,2334.24
+0,2632,2632,Ivana Test Smetanová,F,2021-03-17,71,-1,True,False,sever,2253.32,3000.0,2253.32
+0,798,798,Jaroslav Test Kříž,M,2022-01-05,88,-1,True,False,stred,254.74,254.74,750.0
+0,3958,3958,Dominika Test Hájková,F,2018-08-12,88,-1,True,False,stred,2370.36,2370.36,3120.0
+0,605,605,Ondřej Test Kadlec,M,2021-04-15,88,-1,True,False,stred,2252.74,2252.74,3000.0
+0,501,501,Adam Test Svatoš,M,2018-09-14,11,-1,True,False,stary_liskovec,3080.0,2330.0,2330.0
+0,3442,3442,Renata Test Vlčková,F,2018-12-05,11,-1,True,False,stary_liskovec,3080.0,2330.0,2330.0
+0,1605,1605,Patrik Test Svatoš,M,2020-06-10,11,11,True,False,stary_liskovec,3050.0,2291.62,2291.62
