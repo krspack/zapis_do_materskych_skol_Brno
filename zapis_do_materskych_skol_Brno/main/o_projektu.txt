@@ -1,11 +1,11 @@
-﻿## O projektu
+## O projektu
 Projekt se týká rozřazení uchazečů do městských mateřských škol v Brně. Jeho cílem je zjednodušit tento proces tak, aby práci, kterou dnes dělají ředitelé/ky školek a rodiče prostřednictvím telefonátů a e-mailů udělal algoritmus, který byl vynalezen pro tento účel. Projekt počítá se zachováním stávající centrální evidence přihlášek (zapisdoms.brno.cz) a navrhuje ji rozšířit o automatizované rozřazení uchazečů do školek podle jejich preferencí, a to beze změny stávajících výběrových kritérií.
 
-## Zápis do školek dnes: 
+## Zápis do školek dnes:
 Současný systém zápisu do školek je popsán na webu zapisdoms.brno.cz. Ve stručnosti funguje takto:
 1. Přihlášení: Uchazeč se přihlásí do libovolného počtu školek.
-2. Přijetí: Uchazeč dostane přidělené body ve vztahu ke každé školce, kam se hlásí. (Bodování zohledňuje spádovost, vzdálenost bydliště aj.) Školka následně rozhodne o přijetí uchazečů s nejvyšším počtem bodů. Každá školka rozhoduje nezávisle na ostatních školkách, a proto děti mohou být přijaty na vícero míst zároveň. 
-3. Dodatečné změny: duplicitně přijatí uchazeči by měli co nejdříve sami informovat školky, zda do nich nastoupí, nebo nenastoupí. V praxi tento krok však trvá dny až měsíce. Seznamy přijatých dětí se tím dodatečně proškrtávají a vznikají nová volná místa, která ředitelé/ky školek obsazují podle svého uvážení. Někde dodržují pořadí a obvolávají uchazeče "pod čarou", jinde už na body nehledí a vezmou, koho chtějí. 
+2. Přijetí: Uchazeč dostane přidělené body ve vztahu ke každé školce, kam se hlásí. (Bodování zohledňuje spádovost, vzdálenost bydliště aj.) Školka následně rozhodne o přijetí uchazečů s nejvyšším počtem bodů. Každá školka rozhoduje nezávisle na ostatních školkách, a proto děti mohou být přijaty na vícero míst zároveň.
+3. Dodatečné změny: duplicitně přijatí uchazeči by měli co nejdříve sami informovat školky, zda do nich nastoupí, nebo nenastoupí. V praxi tento krok však trvá dny až měsíce. Seznamy přijatých dětí se tím dodatečně proškrtávají a vznikají nová volná místa, která ředitelé/ky školek obsazují podle svého uvážení. Někde dodržují pořadí a obvolávají uchazeče "pod čarou", jinde už na body nehledí a vezmou, koho chtějí.
 
 ## Slabá místa stávajícího systému:
 1. Pracnost pro ředitele/ky školek i uchazeče
@@ -13,10 +13,10 @@ Současný systém zápisu do školek je popsán na webu zapisdoms.brno.cz. Ve s
 3. Netransparentnost a vznik podmínek pro potenciální nerovné zacházení s uchazeči
 
 ## Řešení: prioritní fronta
-Popsaná slabá místa jsou důsledkem postupu, kdy jsou uchazeči nejprve přijati a teprvé poté se rozhodují, kam nastoupí. Pro výrazné zjednodušení celého procesu přitom stačí tyto dva kroky zaměnit, tedy stanovit priority uchazeče už ve fázi podávání přihlášek. Díky tomu jde na věc aplikovat známý a dobře popsaný algoritmus (https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm). 
+Popsaná slabá místa jsou důsledkem postupu, kdy jsou uchazeči nejprve přijati a teprvé poté se rozhodují, kam nastoupí. Pro výrazné zjednodušení celého procesu přitom stačí tyto dva kroky zaměnit, tedy stanovit priority uchazeče už ve fázi podávání přihlášek. Díky tomu jde na věc aplikovat známý a dobře popsaný algoritmus (https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm).
 
-Technicky se jedná o tzv. problém stabilního párování (typ zvaný "college admissions" nebo také "hospitals - residents"). Rozřazování uchazečů do škol je jeho modelovým použitím, na kterém byl poprvé popsán. V roce 2012 za něj byla udělana Nobelova cena za ekonomii. 
+Technicky se jedná o tzv. problém stabilního párování (typ zvaný "college admissions" nebo také "hospitals - residents"). Rozřazování uchazečů do škol je jeho modelovým použitím, na kterém byl poprvé popsán. V roce 2012 za něj byla udělana Nobelova cena za ekonomii.
 
-Stabilní párování ve zkratce: Do rozřazovacího procesu vstupují dvě sady "hráčů", zde školky a uchazeči, z nichž každý hráč má preference ohledně toho, s kým by chtěl být spárován. Preference uchazečů jsou vyjádřeny prioritní frontou přihlášek. Preference školek vyjadřuje (automatizované) obodování uchazečů podle věku, bydliště a dalších objektivních údajů, jak je tomu už dnes. Rozřazovací algoritmus provede takové spárování, které v co největší míře vyhovuje preferencím uchazečů i školek, přičemž důležitější je spokojenost uchazečů. Jinými slovy, jestliže se uchazeč U dostane do školky S, znamená to, že neexistuje žádná jiná školka, které by dal přednost před školkou S a zároveň by pro ni měl dost bodů. 
+Stabilní párování ve zkratce: Do rozřazovacího procesu vstupují dvě sady "hráčů", zde školky a uchazeči, z nichž každý hráč má preference ohledně toho, s kým by chtěl být spárován. Preference uchazečů jsou vyjádřeny prioritní frontou přihlášek. Preference školek vyjadřuje (automatizované) obodování uchazečů podle věku, bydliště a dalších objektivních údajů, jak je tomu už dnes. Rozřazovací algoritmus provede takové spárování, které v co největší míře vyhovuje preferencím uchazečů i školek, přičemž důležitější je spokojenost uchazečů. Jinými slovy, jestliže se uchazeč U dostane do školky S, znamená to, že neexistuje žádná jiná školka, které by dal přednost před školkou S a zároveň by pro ni měl dost bodů.
 
 Pro řešení jsem použila knihovnu matching (https://pypi.org/project/matching/).
