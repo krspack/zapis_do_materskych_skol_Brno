@@ -1,18 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
-import csv
-import pandas as pd
-import random
-import copy
-import numpy as np
-import datetime
-from dateutil.relativedelta import relativedelta
 import sys
-from matching.games import HospitalResident
 import warnings
 import subprocess
+import random
+import datetime
+from dateutil.relativedelta import relativedelta
+import pandas as pd
+import copy
+
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
@@ -45,39 +42,39 @@ kapacita_jedne_skolky = int(
 random.seed(random_seed)
 
 
-def vyrob_adresar(test_number):
+def vyrob_adresar(test_number: str):
+    # pokud je cislo testu jine nez 1, vyrobi adresar, kam se ulozi mezivysledky a vysledek testu
     if test_number not in [1, "1"]:
         nazev_adresare = str(test_number) + "_test"
         vyrob_novy_adresar = ["mkdir", nazev_adresare]
         subprocess.run(vyrob_novy_adresar)
-    return
 
 
 vyrob_adresar(cislo_testu)
 
 
-def get_kapacity_skolek(kapacity_input, skolky_df):
+def get_kapacity_skolek(kapacity_input: int, skolky_df: pd.DataFrame):
+    # pokud je zadana kapacita skolek, prepise v datasetu 'skolky' defaultni kapacitu skolek
     if kapacity_input > 0:
         skolky_df["volna_mista"] = kapacity_input
-    return
 
 
 get_kapacity_skolek(kapacita_jedne_skolky, skolky)
 
 
-def get_random_rows_skolky(dataframe, num_rows):
+def get_random_rows_skolky(dataframe: pd.DataFrame, num_rows: int) -> pd.DataFrame:
     # vybere nahodne skolky z datasetu 'skolky' v poctu pocet_skolek
     random_rows = dataframe.sample(n=num_rows)
     random_rows.reset_index()
     return random_rows
 
 
-skolky = get_random_rows_skolky(skolky, num_rows=pocet_skolek)
+skolky = get_random_rows_skolky(skolky, pocet_skolek)
 
 skolky.to_csv("{}_test/skolky_test.csv".format(cislo_testu))
 
 
-def get_random_rows_deti(dataframe, num_rows):
+def get_random_rows_deti(dataframe: pd.DataFrame, num_rows: int) -> pd.DataFrame:
     # Vybere nahodne uchazece z datasetu 'deti' v poctu pocet_uchazecu
     random_rows = dataframe.sample(n=num_rows)
     random_rows["spadova_skolka"] = [
@@ -93,16 +90,16 @@ def get_random_rows_deti(dataframe, num_rows):
     return random_rows
 
 
-deti = get_random_rows_deti(deti, num_rows=pocet_deti)
+deti = get_random_rows_deti(deti, pocet_deti)
 
 deti.to_csv("{}_test/deti_test.csv".format(cislo_testu))
 
 
 # vyroba prihlasek:
-def get_prihlasky(deti_df, skolky_df):
+def get_prihlasky(deti_df: pd.DataFrame, skolky_df: pd.DataFrame) -> pd.DataFrame:
     # Fuknce simuluje výběr oblíbených školek. Počet položek je náhodný.
     # Funkce při "výběru" oblíbených školek zohledňuje spádovost a školku sourozence.
-    data = {"dite": [], "jmeno": [], "skolka": [], "poradi": []}
+    data: dict[str, list] = {"dite": [], "jmeno": [], "skolka": [], "poradi": []}
     for idx, row in deti_df.iterrows():
         vybrane_skolky = set()
         pocet_prihlasek = random.randint(1, len(skolky_df))
@@ -123,10 +120,10 @@ def get_prihlasky(deti_df, skolky_df):
                 vybrane_skolky.add(choice)
                 dostupne_skolky = [_ for _ in dostupne_skolky if _ != choice]
 
-        vybrane_skolky = list(vybrane_skolky)
-        vybrane_skolky = [str(_) for _ in vybrane_skolky]
+        vybrane_skolky_list = list(vybrane_skolky)
+        vybrane_skolky_list = [str(_) for _ in vybrane_skolky]
 
-        for index, value in enumerate(vybrane_skolky):
+        for index, value in enumerate(vybrane_skolky_list):
             data["dite"].append(str(row["dite_id"]))
             data["jmeno"].append(row["jmeno"])
             data["skolka"].append(value)
@@ -154,7 +151,7 @@ print(prihlasky)
 # vypocet bodu pro jednotlive uchazece podle kritérií popsaných zde: https://zapisdoms.brno.cz/kriteria-rizeni
 
 
-def get_mestska_cast(deti_df):
+def get_mestska_cast(deti_df: pd.DataFrame) -> pd.DataFrame:
     # Funkce rozšíří tabulku dětí o sloupec "mestska_cast", převzatý od spádové školky, za účelem obodování.
     deti_df = pd.merge(
         deti_df,
@@ -169,7 +166,7 @@ def get_mestska_cast(deti_df):
 deti = get_mestska_cast(deti)
 
 
-def get_age(birthday):
+def get_age(birthday: datetime.date) -> tuple[int, int]:
     # Z data narození vypočte věk v letech a dnech k letošnímu 31. srpnu.
     today = datetime.date.today()
     current_year = today.year
@@ -187,7 +184,7 @@ def get_age(birthday):
     return age_in_years, difference.days
 
 
-def get_points_years(age, age_difference_days):
+def get_points_years(age: int, age_difference_days: int) -> int:
     # Přidelí body za věk.
     options = {7: 2160, 6: 2120, 5: 2080, 4: 2040, 3: 2000, 2: 0, 1: 0}
     calculate_points = (
@@ -197,7 +194,7 @@ def get_points_years(age, age_difference_days):
     return points_years
 
 
-def calculate_points_one_child(id_child):
+def calculate_points_one_child(id_child: int) -> pd.DataFrame:
     # Sečte body za všechna bodovaná kritéria.
 
     # vytvořit tabulku "1 uchazeč, všechny školky"

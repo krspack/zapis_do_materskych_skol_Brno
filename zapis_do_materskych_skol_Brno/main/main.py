@@ -14,23 +14,21 @@
 #
 
 
+import sys
+import warnings
 import csv
 import pandas as pd
-import copy
-import numpy as np
-import datetime
-from dateutil.relativedelta import relativedelta
-import sys
 from matching.games import HospitalResident
-import warnings
-import subprocess
+from dateutil.relativedelta import relativedelta
+
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 script_name = sys.argv[0]
 oznaceni_testu = str(sys.argv[1] if len(sys.argv) > 1 else 1)
 
-# mezivýsledky uložené skriptem test.py. Pokud se main.py spouští samostatně (ne z testu), je nutné upravit cestu k souborům na "testy/{}_test/deti_test.csv"
+# mezivýsledky uložené skriptem test.py se ctou z nasledujicich souboru.
+# Pokud se main.py spouští samostatně (ne z testu), je nutné upravit cestu k souborům na "testy/{}_test/deti_test.csv"
 deti = pd.read_csv(
     "{}_test/deti_test.csv".format(oznaceni_testu),
     dtype={
@@ -60,7 +58,7 @@ body = pd.read_csv(
 
 
 # vstup pro funkci "match" c. 1: priority uchazecu
-def get_priorities(tabulka_prihlasek):
+def get_priorities(tabulka_prihlasek: pd.DataFrame) -> dict:
     # Funkce vytvoří slovník uchazečů a jejich prioritních seznamů školek.
     prihlasky_groupedby_kids = tabulka_prihlasek.groupby("dite")["skolka"].agg(list)
     return prihlasky_groupedby_kids.to_dict()
@@ -87,30 +85,34 @@ for a, b in priority_jmena.items():
 
 
 # vstup pro funkci "match" c. 2: kapacity skolek
-def get_volna_mista(df_skolky):
+def get_volna_mista(df_skolky: pd.DataFrame) -> dict[str, int]:
     # vyrobí slovník "školka: kapacita"
     volna_mista = df_skolky[["skolka_id", "volna_mista"]]
-    volna_mista = skolky.set_index("skolka_id")["volna_mista"].to_dict()
-    volna_mista = {str(k): v for k, v in volna_mista.items()}
-    return volna_mista
+    volna_mista_dict = skolky.set_index("skolka_id")["volna_mista"].to_dict()
+    volna_mista_dict = {str(k): v for k, v in volna_mista_dict.items()}
+    return volna_mista_dict
 
 
 volna_mista = get_volna_mista(skolky)
 
 
 # vstup pro funkci "match" c. 3: priority skolek, vyjadrene poradim obodovanych uchazecu o kazdou skolku
-def get_schools_longlists(body_df, prihlasky_df):
+def get_schools_longlists(
+    body_df: pd.DataFrame, prihlasky_df: pd.DataFrame
+) -> dict[str, list[str]]:
     # Z tabulky body_df vybere jen relevantni udaje podle toho, kdo se kam hlásí.
     # výstup je slovnik typu "skolka a k ni vsechny deti, co se na ni hlasi, seřazené podle počtu bodů"
     prihlasky_groupedby_schools = prihlasky_df.groupby("skolka")["dite"].agg(list)
-    prihlasky_groupedby_schools = prihlasky_groupedby_schools.to_dict()
+    prihlasky_groupedby_schools_dict = prihlasky_groupedby_schools.to_dict()
     longlists = {}
-    schools = prihlasky_groupedby_schools.keys()
+    schools = prihlasky_groupedby_schools_dict.keys()
     for s in schools:
         all_kids_one_school = body_df[["dite_id", str(s)]].copy()
         all_kids_one_school["dite_id"] = all_kids_one_school["dite_id"].astype(str)
         kids_applyint_to_one_school = all_kids_one_school.loc[
-            all_kids_one_school["dite_id"].isin(prihlasky_groupedby_schools[str(s)])
+            all_kids_one_school["dite_id"].isin(
+                prihlasky_groupedby_schools_dict[str(s)]
+            )
         ].copy()
         kids_applyint_to_one_school.sort_values(
             by=str(s), ascending=False, inplace=True
@@ -144,11 +146,17 @@ print('uchazeči o každou školu, seřazení podle bodů: ', serazeni_uchazeci)
 print('školky a jejich kapacity: ', volna_mista)
 """
 
+
 # ------------------------------------------------------------------------------------
 sys.setrecursionlimit(10000)
 
 
-def match(priority_zaku, priority_skolek, kapacity_skolek):
+def match(
+    priority_zaku: dict[str, list[str]],
+    priority_skolek: dict[str, list[str]],
+    kapacity_skolek: dict[str, int],
+):
+    # rozřadí uchazeče do školek
     game = HospitalResident.create_from_dictionaries(
         priority_zaku, priority_skolek, kapacity_skolek
     )
@@ -159,7 +167,7 @@ def match(priority_zaku, priority_skolek, kapacity_skolek):
 rozrazeni = match(priority, serazeni_uchazeci, volna_mista)
 
 
-def save_results(results, test_number):
+def save_results(results: dict[str, list[str]], test_number: str):
     nazev_adresare = test_number + "_test"
     with open("{}/vysledek.csv".format(nazev_adresare), "w") as file:
         writer = csv.DictWriter(file, fieldnames=["dite", "skolka", "poradi"])
@@ -174,24 +182,27 @@ def save_results(results, test_number):
 save_results(rozrazeni, oznaceni_testu)
 
 
-def get_vysledek_se_jmeny(vysledek, deti_df):
+def get_vysledek_se_jmeny(vysledek, deti_df: pd.DataFrame) -> dict[str, list[str]]:
     names = {}
     for k, v in vysledek.items():
         k_nazev = skolky.loc[skolky["skolka_id"] == k.name, "nazev_kratky"].item()
+        v_jmeno = [i.name for i in v]
         v_jmeno = [
             (
-                deti_df.loc[deti_df["dite_id"] == i.name, "jmeno"].item()
+                deti_df.loc[deti_df["dite_id"] == i, "jmeno"].item()
                 + " ("
-                + i.name
+                + (deti_df.loc[deti_df["dite_id"] == i, "dite_id"].item())
                 + ")"
             )
-            for i in v
+            for i in v_jmeno
         ]
         names[k_nazev + " (" + k.name + ")"] = v_jmeno
     return names
 
 
 vysledek_se_jmeny = get_vysledek_se_jmeny(rozrazeni, deti)
+
+print()
 print("Výsledky - kdo se dostal kam: ")
 print()
 for k, v in vysledek_se_jmeny.items():
@@ -199,10 +210,10 @@ for k, v in vysledek_se_jmeny.items():
     print()
 
 
-def kdo_se_nedostal(vysledek, deti_df):
+def kdo_se_nedostal(vysledek, deti_df: pd.DataFrame) -> dict[str, str]:
     uspesni_uchazeci = []
     for v in vysledek.values():
-        uspesni_uchazeci += v
+        uspesni_uchazeci.extend(v)
     uspesni_uchazeci = [_.name for _ in uspesni_uchazeci]
 
     neuspesni = {}
@@ -212,9 +223,11 @@ def kdo_se_nedostal(vysledek, deti_df):
     return neuspesni
 
 
+neuspesni = kdo_se_nedostal(rozrazeni, deti)
+
 print()
 print()
 print("Neúspěšní uchazeči:")
 print()
-for k, v in kdo_se_nedostal(rozrazeni, deti).items():
-    print(v + " (" + str(k) + ")")
+for k, v in neuspesni.items():
+    print(v + " (" + k + ")")
