@@ -20,3 +20,5 @@ Technicky se jedná o tzv. problém stabilního párování (typ zvaný "college
 Stabilní párování ve zkratce: Do rozřazovacího procesu vstupují dvě sady "hráčů", zde školky a uchazeči, z nichž každý hráč má preference ohledně toho, s kým by chtěl být spárován. Preference uchazečů jsou vyjádřeny prioritní frontou přihlášek. Preference školek vyjadřuje (automatizované) obodování uchazečů podle věku, bydliště a dalších objektivních údajů, jak je tomu už dnes. Rozřazovací algoritmus provede takové spárování, které v co největší míře vyhovuje preferencím uchazečů i školek, přičemž důležitější je spokojenost uchazečů. Jinými slovy, jestliže se uchazeč U dostane do školky S, znamená to, že neexistuje žádná jiná školka, které by dal přednost před školkou S a zároveň by pro ni měl dost bodů.
 
 Pro řešení jsem použila knihovnu matching (https://pypi.org/project/matching/).
+
+Projekt na GitHubu: https://github.com/krspack/zapis_do_materskych_skol_Brno
