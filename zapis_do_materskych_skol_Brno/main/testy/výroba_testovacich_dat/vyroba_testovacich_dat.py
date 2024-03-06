@@ -70,7 +70,6 @@ def get_random_birthday(deti_df: pd.DataFrame):
             start_date = datetime.date(current_year-7, 9, 1)
             random_date = start_date + relativedelta(days=random.randint(0, (end_date - start_date).days))
             assert (current_year - random_date.year) - ((8, 31) < (random_date.month, random_date.day)) in (6, 7)
-
         birthday_list.append(random_date)
     deti_df['datum_narozeni'] = birthday_list
 
@@ -138,6 +137,7 @@ new_col = deti.index
 deti.insert(0, 'dite_id', new_col)
 deti = deti.sample(frac = 1)
 
+
 get_random_birthday(deti)
 get_random_schools(skolky, skolky_spadove, deti)
 je_bydliste_brno(deti)
@@ -145,7 +145,7 @@ je_prodlouzena_dochazka(deti)
 
 deti = deti.sample(frac = 1)  # podruhe, protoze funkce get_random_birthday(deti) prideluje vek vzestupne
 
-deti.to_csv('deti.csv')
+deti.to_csv('../deti.csv')
 
 
 

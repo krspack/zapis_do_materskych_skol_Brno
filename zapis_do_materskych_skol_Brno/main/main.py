@@ -70,8 +70,8 @@ def get_age(birthday: datetime.date) -> tuple[int, int]:
     current_year = today.year
     schoolyear_start = datetime.date(birthday.year, 8, 31)
     difference = (
-        schoolyear_start - birthday - relativedelta(days=1)
-    )  # prizpusobeni vypoctu webu zapisdoms.brno.cz
+        schoolyear_start - birthday
+    )  # stavajici vypocet na webu zapisdoms.brno.cz jeste odecita jednicku (tj. relativedelta(days = 1)), tj. deti narozene 31.8. by mely o rok mene.
 
     schoolyear_start_current = datetime.date(current_year, 8, 31)
     age_in_years = int(
